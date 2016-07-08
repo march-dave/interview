@@ -10,7 +10,6 @@ app.controller('homeCtrl', function($scope) {
     console.log('homeCtrl', $scope.profileSetting);
     console.log('homeCtrl', $scope.profileSetting);
 
-
     $scope.profileSetting.name = $scope.profileSetting.firstname;
 
      $scope.isDisabled = true;
@@ -18,8 +17,8 @@ app.controller('homeCtrl', function($scope) {
 
 })
 
-app.controller('cancelCtrl', function( $scope) {
+app.controller('cancelCtrl', function($scope) {
   console.log('cancelCtrl');
 
-   $scope.isEnabled = false;
+   $scope.isDisabled = false;
 })
