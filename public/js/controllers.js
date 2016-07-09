@@ -4,21 +4,17 @@ var app = angular.module('routerApp');
 
 app.controller('homeCtrl', function($scope) {
 
-  $scope.profileSettingUpdated = function( ) {
+  $scope.profileSettingUpdated = function() {
 
-    console.log('homeCtrl', $scope.profileSetting);
-    console.log('homeCtrl', $scope.profileSetting);
-    console.log('homeCtrl', $scope.profileSetting);
+    console.log('select', $scope.profileSetting.select);
 
-    $scope.profileSetting.name = $scope.profileSetting.firstname;
-
-     $scope.isDisabled = true;
+    $scope.isDisabled = true;
   }
 
-})
+  $scope.btnCancel = function() {
+    console.log('btnCancel()');
 
-app.controller('cancelCtrl', function($scope) {
-  console.log('cancelCtrl');
+    $scope.isDisabled = false;
 
-   $scope.isDisabled = false;
+  }
 })

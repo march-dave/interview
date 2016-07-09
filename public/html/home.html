@@ -1,36 +1,36 @@
 <div width="100%">
-  <div class="preference" style=" float: left;">
+  <div class="preference" style="width: 50%; float: left;">
+
     <form ng-submit="profileSettingUpdated()">
+      <button type="button" class="btn btn-primary" ng-click="btnCancel()">Cancel</button>
 
-    <!-- <button type="cancel" class="btn btn-primary" ng-disabled="isEnabled">Cancel</button> -->
-    <button type="cancel" class="btn btn-primary" ng-disabled="$invalid">Cancel</button>
-    <button type="submit" class="btn btn-success" ng-disabled="isDisabled">Save</button>
-    &nbsp;&nbsp;
+      <button type="submit" class="btn btn-success" ng-disabled="isDisabled">Save</button>
+      &nbsp;&nbsp;
 
-     <fieldset class="form-group">
-     <!-- <label>First Name</label> -->
-     <input type="text" class="form-control" placeholder="First Name" ng-model="profileSetting.firstname">
-    </fieldset>
-    <fieldset class="form-group">
-    <!-- <label>Last Name</label> -->
-    <input type="text" class="form-control" placeholder="Last Name" ng-model="profileSetting.lastname">
-    </fieldset>
+       <fieldset class="form-group">
+       <!-- <label>First Name</label> -->
+       <input type="text" class="form-control" placeholder="First Name" ng-model="profileSetting.firstname">
+      </fieldset>
+      <fieldset class="form-group">
+      <!-- <label>Last Name</label> -->
+      <input type="text" class="form-control" placeholder="Last Name" ng-model="profileSetting.lastname">
+      </fieldset>
 
-    <fieldset class="form-group">
-    <!-- <label>Select</label> -->
-    <!-- <input type="select" class="form-control" ng-model="profileSetting.select"> -->
+      <fieldset class="form-group">
+      <!-- <label>Select</label> -->
+      <!-- <input type="select" class="form-control" ng-model="profileSetting.select"> -->
 
-    <select class="form-control" ng-model="profileSetting.select">
-      <option value="select1">select1</option>
-      <option value="select2">select2</option>
-    </select>
+      <select class="form-control" ng-model="profileSetting.select">
+        <option value="select1">select1</option>
+        <option value="select2">select2</option>
+      </select>
 
     </fieldset>
     </form>
 
   </div>
 
-  <div class="preference" style="float: left">
+  <div class="preference" style="width: 50%; float: left">
 
     <fieldset class="form-group">
     <!-- <label>First Name</label> -->
