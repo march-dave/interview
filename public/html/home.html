@@ -1,5 +1,5 @@
-<div width="100%">
-  <div class="preference" style="width: 50%; float: left;">
+<div class="row">
+  <div class="preference col-md-6">
 
     <form ng-submit="profileSettingUpdated()">
       <button type="button" class="btn btn-primary" ng-click="btnCancel()">Cancel</button>
@@ -30,13 +30,11 @@
 
   </div>
 
-  <div class="preference" style="width: 50%; float: left">
+  <div class="preference col-md-06">
 
     <fieldset class="form-group">
-    <!-- <label>First Name</label> -->
-    <input type="text" class="form-control" placeholder="First Name" ng-model="profileSetting.name" required disabled>
-    <input type="text" class="form-control" placeholder="Last Name" ng-model="profileSetting.name" required disabled>
-    <!-- <input type="text" class="form-control" placeholder="First Name" ng-model="profileSetting.name" required disabled> -->
+      <input type="text" style="background-color: #5cb85c" ng-model="profileSetting.labelfirstname" />
+      <h6 style="background-color: #5cb85c" ng-bind="profileSetting.firstname">Hello</h6>
     </fieldset>
 
   </div>
